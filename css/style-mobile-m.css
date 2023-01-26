@@ -1,0 +1,16 @@
+:root {
+    --logo-size: 22px;
+    --banner-message-size: 12px;
+    --slide-message-size: 24px;
+    --benefits-title-size: 12px;    
+    --benefits-subtitle-size: 10px;
+
+    --content-width: 327px;
+    --icon-size: 24px;
+    --default-spacing-1: 24px;
+    --default-spacing-2: 12px;
+
+    --header-height: 96px;
+    --banner-height: 18px;
+    --slide-height: 412px;
+}

@@ -1,0 +1,38 @@
+:root {
+    --logo-size: 27px;
+    --banner-message-size: 15px;
+    --slide-message-size: 30px;
+    --benefits-title-size: 15px;
+    --benefits-subtitle-size: 12px;
+
+    --content-width: 668px;
+    --icon-size: 30px;
+    --default-spacing-1: 30px;
+    --default-spacing-2: 15px;
+
+    --header-height: 120px;
+    --banner-height: 22px;
+    --slide-height: 500px;
+}
+
+.logo {
+    margin-left: 0;
+}
+
+.header__container {
+    position: static;
+}
+
+.header__menu--icon {
+    display: none;
+}
+
+.header__menu--itens {
+    display: flex;
+}
+
+/* Benefits Section */
+
+.benefits__container {
+    grid-template-columns: repeat(4, 1fr);
+}

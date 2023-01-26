@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&family=Poppins:wght@300;400;500;600&family=Urbanist:wght@600&display=swap');
+
+:root {
+    --main-font: 'Poppins', sans-serif;
+    --slide-font: 'Urbanist', sans-serif;
+    --section-font: 'Bodoni Moda', serif;
+
+    --logo-size: 18px;
+    --banner-message-size: 10px;
+    --slide-message-size: 20px;
+    --benefits-title-size: 10px;
+    --benefits-subtitle-size: 8px;
+
+    --light-weight: 300;
+    --regular-weight: 400;
+    --medium-weight: 500;
+    --semibold-weight: 600;
+
+    --background-color: #585D5A;
+    --text-color-1: black;
+    --text-color-2: white;
+    --forms-color: #A5A5A5;
+    --price-color: #2F2918;
+    --button-color: #826F54;
+
+    --content-width: 280px;
+    --icon-size: 20px;
+    --default-spacing-1: 20px;
+    --default-spacing-2: 10px;
+    
+    --header-height: 80px;
+    --banner-height: 15px;
+    --slide-height: 352px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+.icons {
+    color: var(--text-color-2);
+    font-size: var(--icon-size);
+    font-weight: var(--light-weight);
+}
+
+.logo {
+    color: white;
+    font-weight: var(--semibold-weight);
+    font-size: var(--logo-size);
+    margin-left: calc(var(--icon-size) + var(--default-spacing-1));
+}
+
+/* Header Section */
+
+.header {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+}
+
+.header__container {
+    position: relative;
+    height: var(--header-height);
+    width: var(--content-width);   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu--icon {
+    position: absolute;
+    left: 0;
+    top: calc(50% - ( 0.5 * var(--icon-size) ));
+}
+
+.header__menu--itens {
+    display: none;
+    column-gap: 10px;
+}
+
+.header__menu--itens a {
+    color: var(--text-color-2);
+    font-size: 14px;
+    font-weight: var(--regular-weight);
+}
+
+.header__user-area {
+    display: flex;
+    column-gap: var(--default-spacing-1);
+}
+
+/* Banner Section */
+
+.banner {
+    background-color: var(--text-color-1);
+    color: var(--text-color-2);
+    font-size: var(--banner-message-size);
+    font-weight: var(--light-weight);
+    height: var(--banner-height);
+    text-align: center;
+}
+
+/* Slide Section */
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: var(--slide-height);
+    object-fit: cover;
+}
+
+.swiper-slide p {
+    position: absolute;
+    top: calc(50% - ( 0.5 * var(--slide-message-size) ));
+    right: 0;
+    left: 0;
+    margin-inline: auto;
+    text-align: center;
+    color: var(--text-color-2);
+    font-family: var(--slide-font);
+    font-size: var(--slide-message-size);
+    font-weight: var(--semibold-weight);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "";
+}
+
+/* Benefits Section */
+
+.benefits {
+    display: flex;
+    justify-content: center;
+}
+
+.benefits__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--default-spacing-1);
+    column-gap: var(--default-spacing-1);
+    margin: var(--default-spacing-1) 0;
+    width: var(--content-width);
+}
+
+.benefits__card {
+    border: 1px solid #C2C2C2;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    padding: var(--default-spacing-1) 0;
+    text-align: center;
+}
+
+.benefits__card--icon,
+.benefits__card--title,
+.benefits__card--subtitle {
+    display: block;
+}
+
+.benefits__card--icon {
+    color: var(--text-color-1);
+    margin-bottom: var(--default-spacing-2);
+}
+
+.benefits__card--title {
+    color: var(--text-color-1);
+    font-size: var(--benefits-title-size);
+    font-weight: var(--medium-weight);
+}
+
+.benefits__card--subtitle {
+    color: var(--text-color-1);
+    font-size: var(--benefits-subtitle-size);
+    font-weight: var(--regular-weight);
+}

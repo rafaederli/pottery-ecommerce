@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-mobile-m.css" media="screen and (min-width: 375px)">
+    <link rel="stylesheet" href="css/style-mobile-l.css" media="screen and (min-width: 425px)">
+    <link rel="stylesheet" href="css/style-tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/style-laptop.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="css/style-laptop-l.css" media="screen and (min-width: 1440px)">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Pottery</title>
+
+</head>
+
+<body>
+    <header>
+        <section class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="index.html" class="logo">
+                        POTTERY
+                    </a>
+                </div>
+                <div class="header__menu">
+                    <span class="material-symbols-outlined icons header__menu--icon">
+                        menu
+                    </span>
+                    <nav class="header__menu--itens">
+                        <a href="#">Conjuntos</a>
+                        <a href="#">Canecas</a>
+                        <a href="#">Potes</a>
+                        <a href="#">Pratos</a>
+                        <a href="#">Vasos</a>
+                    </nav>
+                </div>
+                <div class="header__user-area">
+                    <span class="material-symbols-outlined icons">
+                        search
+                    </span>
+                    <span class="material-symbols-outlined icons">
+                        person
+                    </span>
+                    <span class="material-symbols-outlined icons">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="banner">
+            <p>
+                Ganhe 10% de desconto na primeira compra!
+            </p>
+        </section>
+    </header>
+    <main>
+        <section class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/slide/pexels-koolshooters-9736298.jpg" alt="imagem ilustrativa">
+                    <p>modeladas com carinho</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/slide/pexels-valeria-ushakova-3094225.jpg" alt="imagem ilustrativa">
+                    <p>modeladas com carinho</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/slide/pexels-natallia-rak-1675993.jpg" alt="imagem ilustrativa">
+                    <p>modeladas com carinho</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/slide/pexels-roman-odintsov-8063844.jpg" alt="imagem ilustrativa">
+                    <p>modeladas com carinho</p>
+                </div>
+            </div>
+            <div class="swiper-button-next">
+                <span class="material-symbols-outlined icons">
+                    chevron_right
+                </span>
+            </div>
+            <div class="swiper-button-prev">
+                <span class="material-symbols-outlined icons">
+                    chevron_left
+                </span>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="benefits__container">
+                <div class="benefits__card">
+                    <span class="material-symbols-outlined icons benefits__card--icon">
+                        volunteer_activism
+                    </span>
+                    <span class="benefits__card--title">100% artesanal</span>
+                    <span class="benefits__card--subtitle">materiais naturais</span>
+                </div>
+                <div class="benefits__card">
+                    <span class="material-symbols-outlined icons benefits__card--icon">
+                        attach_money
+                    </span>
+                    <span class="benefits__card--title">10% de desconto</span>
+                    <span class="benefits__card--subtitle">primeira compra</span>
+                </div>
+                <div class="benefits__card">
+                    <span class="material-symbols-outlined icons benefits__card--icon">
+                        credit_card
+                    </span>
+                    <span class="benefits__card--title">Pague parcelado</span>
+                    <span class="benefits__card--subtitle">em até 12x</span>
+                </div>
+                <div class="benefits__card">
+                    <span class="material-symbols-outlined icons benefits__card--icon">
+                        qr_code_2
+                    </span>
+                    <span class="benefits__card--title">Pague a vista</span>
+                    <span class="benefits__card--subtitle">com QR code</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
