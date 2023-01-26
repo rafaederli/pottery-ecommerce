@@ -291,7 +291,8 @@ a {
 .footer__contact,
 .footer__networks {
     color: var(--text-color-2);
-    display: grid;
+    display: flex;
+    flex-direction: column;
     font-size: var(--footer-text-size);
     font-weight: var(--regular-weight);
     row-gap: var(--default-spacing-2);

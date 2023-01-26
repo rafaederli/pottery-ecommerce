@@ -5,11 +5,15 @@
     --benefits-title-size: 15px;
     --benefits-subtitle-size: 12px;
     --section-title-size: 27px;
+    --button-text-size: 14px;
+    --footer-text-size: 18px;
+    --copyright-text-size: 15px;
 
     --content-width: 668px;
     --icon-size: 30px;
     --default-spacing-1: 30px;
     --default-spacing-2: 15px;
+    --large-devices-button-height-1: 20px;
 
     --header-height: 120px;
     --banner-height: 22px;
@@ -36,4 +40,29 @@
 
 .benefits__container {
     grid-template-columns: repeat(4, 1fr);
+}
+
+/* Products Section */
+
+.products__container--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(2 * var(--large-devices-button-height-1));
+    width: 280px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* Footer Section */
+
+.footer__information {
+    column-gap: var(--default-spacing-1);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer__copyright {
+    column-gap: var(--default-spacing-1);
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
 }
