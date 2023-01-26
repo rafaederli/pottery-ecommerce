@@ -4,6 +4,7 @@
     --slide-message-size: 30px;
     --benefits-title-size: 15px;
     --benefits-subtitle-size: 12px;
+    --section-title-size: 27px;
 
     --content-width: 668px;
     --icon-size: 30px;
@@ -15,7 +16,7 @@
     --slide-height: 500px;
 }
 
-.logo {
+.header__logo {
     margin-left: 0;
 }
 
