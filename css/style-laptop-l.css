@@ -1,3 +1,14 @@
 :root {
     --content-width: 1040px;
 }
+
+/* Products Section */
+
+.product__items {
+    column-gap: 100px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.products__container--button {
+    margin-right: 0;
+}

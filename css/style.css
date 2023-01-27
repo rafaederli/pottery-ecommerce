@@ -25,6 +25,7 @@
     --text-color-2: white;
     --forms-color: #A5A5A5;
     --price-color: #2F2918;
+    --cart-button-color: #396B3E;
     --button-color: #826F54;
 
     --content-width: 280px;
@@ -215,17 +216,72 @@ a {
     margin-bottom: var(--default-spacing-1);
 }
 
+.products__item {
+    display: grid;
+    row-gap: var(--default-spacing-2);
+    padding-bottom: var(--default-spacing-1);
+}
+
+.products__item--image {
+    border-radius: 10px;
+    width: var(--content-width);
+}
+
+.products__item--description {
+    color: var(--text-color-1);
+    font-size: var(--button-text-size);
+    font-weight: var(--regular-weight);
+}
+
+.products__item--price {
+    color: var(--price-color);
+    font-size: var(--button-text-size);
+    font-weight: var(--light-weight);
+}
+
+.products__item--counter {
+    display: flex;
+    justify-content: space-between;
+    height: calc(2 * var(--default-spacing-1));
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+}
+
+.products__item--counter button,
+.products__item--counter input {
+    color: var(--text-color-1);
+    font-size: var(--button-text-size);
+    font-weight: var(--light-weight);
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+.products__item--counter button {
+    width: calc(2 * var(--default-spacing-1));
+    cursor: pointer;
+}
+
+.products__item--button,
 .products__container--button {
     color: var(--text-color-2);
+    font-family: var(--main-font);
     font-size: var(--button-text-size);
     font-weight: var(--regular-weight);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--button-color);
+    background-color: var(--cart-button-color);
+    border: none;
     border-radius: 10px;
     height: calc(2 * var(--default-spacing-1));
+    cursor: pointer;
+}
+
+.products__container--button {
+    background-color: var(--button-color);
     margin: var(--default-spacing-1) 0;
+    width: 100%;
 }
 
 /* Footer Section */

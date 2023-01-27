@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-mobile-m.css" media="screen and (min-width: 375px)">
@@ -127,9 +128,23 @@
                 <h1 class="products__container--title">
                     DESTAQUES
                 </h1>
-                <a href="#" class="products__container--button">
-                    VER TODA COLEÇÃO
-                </a>
+                
+                <div class="product__items">
+
+                    <div class="products__item">
+                        <img src="img/products/pexels-andre-william-3010771.jpg" alt="" class="products__item--image">
+                        <p class="products__item--description">Conjunto chá</p>
+                        <p class="products__item--price">$ 120.00</p>
+                        <div class="products__item--counter">
+                            <button>-</button>
+                            <input type="number" name="" id="" placeholder="0">
+                            <button>+</button>
+                        </div>
+                        <button class="products__item--button">Adicionar ao carrinho</button>
+                    </div>
+
+                </div>
+                <button class="products__container--button">VER TODA COLEÇÃO</button>
             </div>
         </section>
     </main>
@@ -173,7 +188,7 @@
                 </div>
                 <div class="footer__copyright">
                     <p>Copyright &copy; 2023 Pottery Atelie</p>
-                    <p>Desenvolvido por <a href="#" target="_blank">Rafael Ederli</a></p>
+                    <p>Desenvolvido por <a href="https://rafaederli.github.io/portfolio-page/" target="_blank">Rafael Ederli</a></p>
                 </div>
             </div>
         </section>

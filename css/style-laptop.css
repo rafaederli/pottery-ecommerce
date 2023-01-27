@@ -1,3 +1,13 @@
 :root {
     --content-width: 824px;
 }
+
+/* Products Section */
+
+.product__items {
+    column-gap: 31px;
+}
+
+.products__container--button {
+    margin-right: 116px;
+}
