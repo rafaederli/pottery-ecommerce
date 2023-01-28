@@ -1,3 +1,10 @@
 import createProduct from "./createProduct.js";
+import db from "./db.js";
 
-createProduct("img/products/pexels-andre-william-3010771.jpg", "Conjunto Chá", 120);
+const data = db;
+
+data.forEach(product => {
+    if (product["home-page"]) {
+        createProduct(product.source, product.name, product.price);
+    }
+})

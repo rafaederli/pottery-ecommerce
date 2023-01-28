@@ -1,4 +1,4 @@
-const createProduct = (imageSrc, productName, productPrice) => {
+const createProduct = (imageSrc, productName, productPrice, dataAttribute = "[data-products]") => {
     let product = document.createElement("div");
     product.classList.add("products__item");
 
@@ -44,7 +44,7 @@ const createProduct = (imageSrc, productName, productPrice) => {
     cartButton.innerHTML = "Adicionar ao carrinho";
     product.appendChild(cartButton);
 
-    let products = document.querySelector("[data-products]");
+    let products = document.querySelector(dataAttribute);
     products.appendChild(product);
 }
 
